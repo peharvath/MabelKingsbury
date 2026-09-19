@@ -3431,4 +3431,9 @@ svg#chart text[data-person]{cursor:pointer}
   box-shadow:0 0 0 2px rgba(255,255,255,.9),0 4px 16px rgba(0,0,0,.28);
 }
 svg#chart text[data-person]{cursor:pointer;pointer-events:all}
+ /* Make dates smaller than ancestor names */
+svg#chart text[data-person]:not([data-person="112"]) tspan:nth-child(2){
+  font-size:75% !important;
+  font-weight:400 !important;
+}
 </style>
